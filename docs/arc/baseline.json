@@ -1,0 +1,10 @@
+{
+  "upstream": "https://github.com/rustdesk/rustdesk.git",
+  "fork": "https://github.com/FebCloud/rustdesk.git",
+  "branch": "arc/desktop-integration",
+  "upstreamCommit": "a7468d0df356bc7eedf9cec22dd97384306880c7",
+  "submodules": {
+    "libs/hbb_common": "fae47e024dd83cef6aaecde0aa7d11731df11649"
+  },
+  "validation": "source-inspection-only; no customized binary or remote session tested"
+}
