@@ -4,7 +4,7 @@ This is an unofficial downstream integration branch of RustDesk. Upstream licens
 
 ## Scope
 
-Keep RustDesk and its modifications in this public AGPL repository. The initial integration target is a separately built, separately running desktop component, invoked through a small documented external interface. Do not copy private controller code, account credentials, device identifiers, certificates, signing material or runtime logs into this repository.
+Keep RustDesk and its modifications in this public AGPL repository. The integration target is now an extracted remote-control engine, not the stock RustDesk UI, account system or hbbs/hbbr deployment. See ENGINE-EXTRACTION.md for the measured dependency boundary. Whether the extracted engine is linked or separately executed is a distinct distribution decision; do not assume that a module boundary exempts the containing program from AGPL. Do not copy private controller code, account credentials, device identifiers, certificates, signing material or runtime logs into this repository.
 
 The controller must distinguish process launch from an authenticated remote session. RustDesk peer IDs are addresses, not proof of account ownership. Do not transmit persistent passwords through process arguments or URLs. Any account/device authorization bridge needs its own design and verification before enabling remote control.
 
